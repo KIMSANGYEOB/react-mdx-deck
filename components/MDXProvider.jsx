@@ -8,6 +8,7 @@ import SpeakerNotes from "./SpeakerNotes";
 import Step from "./Step";
 import Steps from "./Steps";
 import { motion } from "framer-motion";
+import Button from './Button';
 
 const mdComponents = {
   h1: (props) => <h1 {...props} />,
@@ -29,6 +30,7 @@ const mdComponents = {
   SpeakerNotes,
   Step,
   Steps,
+  Button: (props) => <Button {...props} />,
   motion,
 };
 

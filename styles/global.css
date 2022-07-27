@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+
+@tailwind base;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans KR', Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@layer components {
+  #__next {
+    @apply h-full
+  }
+
+  .custom-scroll {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    -webkit-overflow-scrolling: touch;
+    --radix-scroll-area-corner-width: 0px;
+    --radix-scroll-area-corner-height: 0px;
+  }
+
+  .custom-scroll::-webkit-scrollbar {
+    width: 10px;
+    background-color: #efeff2;
+    border-radius: 5px;
+  }
+
+  .custom-scroll::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: #cacacc;
+    background-clip: padding-box;
+    border: 1px solid transparent;
+  }
+
+  .small {
+    @apply w-8 h-8 min-w-[2rem] text-xs rounded-lg
+  }
+
+  .middle {
+    @apply w-12 h-12 min-w-[3rem] text-base rounded-2xl
+  }
+
+  .large {
+    @apply w-16 h-16 min-w-[4rem] text-lg rounded-3xl
+  }
+
+  .button-sm {
+    @apply text-xs px-2 py-2 rounded-md
+  }
+
+  .button-md {
+    @apply text-base px-3 py-2 rounded-md
+  }
+
+  .button-lg {
+    @apply text-xl px-4 py-2 rounded-lg
+  }
+
+  .button-primary {
+    @apply text-white font-medium bg-blue-600 sm:w-auto hover:bg-blue-700 rounded-md border
+  }
+
+  .button-submit {
+    @apply text-white font-medium bg-green-600 sm:w-auto hover:bg-green-700 rounded-md border
+  }
+
+  .button-cancel {
+    @apply text-white font-medium bg-gray-600 sm:w-auto hover:bg-gray-700 rounded-md border border-gray-300
+  }
+
+  .button-delete {
+    @apply text-white font-medium bg-rose-600 sm:w-auto hover:bg-rose-700 rounded-md border
+  }
+
+  .button-new {
+    @apply text-white font-medium bg-gradient-to-r from-green-500 to-cyan-500 transition-all hover:from-green-600 hover:to-cyan-600
+  }
+
+  .button-warn {
+    @apply text-white font-medium bg-amber-400 sm:w-auto hover:bg-amber-500 rounded-md border
+  }
+
+  .outline-button-primary {
+    @apply bg-transparent bg-white font-medium text-blue-600 sm:w-auto rounded-md border-2 border-blue-600
+      hover:bg-blue-700 hover:text-white hover:border-blue-700
+  }
+
+  .outline-button-submit {
+    @apply bg-transparent bg-white font-medium text-green-600 sm:w-auto rounded-md border-2 border-green-600
+    hover:bg-green-700 hover:text-white hover:border-green-700
+  }
+
+  .outline-button-cancel {
+    @apply bg-transparent bg-white font-medium text-gray-600 sm:w-auto rounded-md border-2 border-gray-600
+    hover:bg-gray-700 hover:text-white hover:border-gray-700
+  }
+
+  .outline-button-delete {
+    @apply bg-transparent bg-white font-medium text-rose-600 sm:w-auto rounded-md border-2 border-rose-600
+    hover:bg-rose-700 hover:text-white hover:border-rose-700
+  }
+
+  .outline-button-warn {
+    @apply bg-transparent bg-white font-medium text-amber-400 sm:w-auto rounded-md border-2 border-amber-400
+    hover:bg-amber-400 hover:text-white hover:border-amber-400
+  }
+
+  .outline-button-new {
+    @apply bg-clip-text text-transparent text-green-600 font-medium transition-all bg-gradient-to-r from-green-500 to-cyan-500 border-2 border-x-green-500 border-y-cyan-500  
+    hover:text-white hover:bg-clip-border hover:bg-gradient-to-r hover:from-green-600 hover:to-cyan-600 hover:border-x-green-600 hover:border-y-cyan-600
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
