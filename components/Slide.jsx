@@ -7,7 +7,7 @@ const StyledSlide = styled.div`
 
 export default function Slide({ children, id, className }) {
   return (
-    <StyledSlide id={id} className={className}>
+    <StyledSlide id={id} className={className} >
       {children}
     </StyledSlide>
   )

@@ -139,7 +139,7 @@ const GlobalStyle = createGlobalStyle`
   }
 
   pre {
-    font-size: 0.75em !important;
+    font-size: 0.65em !important;
 
     display: inline-block;
     overflow-x: scroll;
@@ -226,12 +226,13 @@ export default function SlidePage({ children, next }) {
   const totalPages = useTotalPages();
   const { mode, setMode } = useMode();
 
-  const NEXT = [13, 32, 39];
+  const NEXT = [39];
   const PREV = 37;
   const PRESENTER = 80;
   let slideCount = 0;
 
   const navigate = ({ keyCode, altKey }) => {
+    console.log(keyCode)
     // Handle Presentation Mode shortcut
     if (altKey) {
       if (keyCode === PRESENTER) {
@@ -386,7 +387,7 @@ export default function SlidePage({ children, next }) {
         notes={slideNotes()}
         currentSlide={currentSlide}
       >
-        <div id="slide" style={{ width: "100%" }}>
+        <div id="slide" style={{ width: "100%", overflowY: "auto" }}>
           {renderSlide()}
         </div>
       </PresentationMode>

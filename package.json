@@ -9,15 +9,26 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@floating-ui/react-dom": "^1.0.0",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^11.0.1",
+    "@tailwindcss/forms": "^0.5.2",
+    "@tailwindcss/typography": "^0.5.4",
+    "@tiptap/extension-table": "^2.0.0-beta.54",
+    "@tiptap/extension-table-cell": "^2.0.0-beta.23",
+    "@tiptap/extension-table-header": "^2.0.0-beta.25",
+    "@tiptap/extension-table-row": "^2.0.0-beta.22",
+    "@tiptap/react": "^2.0.0-beta.114",
+    "@tiptap/starter-kit": "^2.0.0-beta.191",
     "classnames": "^2.3.1",
     "framer-motion": "^4.1.17",
     "next": "11.0.1",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-icons": "^4.4.0",
     "react-swipeable": "^6.1.2",
     "react-syntax-highlighter": "^15.4.4",
+    "sass": "^1.54.0",
     "styled-components": "^5.2.3"
   },
   "devDependencies": {

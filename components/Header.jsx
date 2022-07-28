@@ -9,7 +9,7 @@ export default function Header({ name, title, date, url }) {
           <span>{name}</span>
         </a>{' '}
         —{' '}
-        <Link href="/1">
+        <Link href="https://realgrid.com">
           <a>{title}</a>
         </Link>
       </div>

@@ -18,6 +18,7 @@ export default function Button({
     <button
       type="button"
       className={classNames(
+        'mr-2',
         customCSS,
         { 'button-primary': type === 'primary' && !outline },
         { 'button-submit': type === 'submit' && !outline },
@@ -40,7 +41,7 @@ export default function Button({
       onClick={onClick}
       disabled={disabled}
     >
-      <span className={classNames({'mr-2': icon})}>
+      <span className={classNames({'mr-1': icon})}>
         {icon}
       </span>
       {text}

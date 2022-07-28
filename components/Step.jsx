@@ -6,9 +6,8 @@ const TRANSLATE_Y_DISTANCE = "-1em";
 
 export const Step = ({ children, order, duration = 0.5 }) => {
   const { currentStep, steps, addStep, removeStep } = useCurrentSlide();
-  console.log("step render");
+
   useEffect(() => {
-    console.log("step useEffect");
     if (!steps.includes(order)) {
       addStep(order);
     }

@@ -36,6 +36,7 @@ export const useStorage = () => {
         router.push(`/slides/${parseInt(n, 10)}#${syncedSlide}`);
         break;
       case keys.slide:
+        console.log(e);
         window.location.hash = `#${n}`;
         setSlide(n);
         break;

@@ -16,6 +16,7 @@ export function CurrentSlideProvider({ children }) {
   const [steps, setSteps] = useState([]);
 
   const addStep = (id) => {
+    console.log(id);
     setSteps((prevSteps) => [...new Set([...prevSteps, id])]);
   };
   const removeStep = (id) => {
@@ -28,7 +29,6 @@ export function CurrentSlideProvider({ children }) {
     setCurrentStep(0);
   };
 
-  console.log("rendering context", currentStep, steps);
   return (
     <CurrentSlideContext.Provider
       value={{

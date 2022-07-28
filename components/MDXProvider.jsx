@@ -9,6 +9,8 @@ import Step from "./Step";
 import Steps from "./Steps";
 import { motion } from "framer-motion";
 import Button from './Button';
+import Icon from './Icon';
+import IntraEditor from './IntraEditor';
 
 const mdComponents = {
   h1: (props) => <h1 {...props} />,
@@ -31,6 +33,8 @@ const mdComponents = {
   Step,
   Steps,
   Button: (props) => <Button {...props} />,
+  Icon: (props) => <Icon {...props} />,
+  IntraEditor: (props) => <IntraEditor {...props} />,
   motion,
 };
 

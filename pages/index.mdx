@@ -2,70 +2,179 @@
     
 <Cover>
 
-# NextJS MDX Deck
+# 우리테크 인트라 어떻게 진행되고 있나요?
 
-Create presentations using Next & React & MDX.
-
-<div className="flex items-center justify-center">
-  <Button text="버튼" type="new"/>
-</div>
-
+# 🤔
 
 </Cover>
 
 ---
 
-1. Clone this project.
-1. Write some MDX.
-1. Export as [static app](https://nextjs.org/docs/advanced-features/static-html-export)
-1. ???
-1. Profit as a speaker 💰💰💰
+<Cover>
 
-<SpeakerNotes>
-    
-Private notes here.
+# 2022년 5월 31일 오후 2시 00분 Start
 
-You can write an extremely long note and it'll still display inside of the presenter mode.
-
-# Even Markdown!
-
-- Just
-- do
-- it
-
-</SpeakerNotes>
+</Cover>
 
 ---
 
+# [버튼 이슈..?](https://github.com/wooritech/intra/issues/48)
+
+<Steps>
+  <Step>
+  </Step>
+  <Step>
+  문제점 (Why) - 모두가 버튼을 사용할텐데 사용법이 너무 중구난방이다.
+  </Step>
+  <Step>
+  어디에서 (Where) - 거의 모든 화면에서 사용한다.
+  </Step>
+  <Step>
+  방법 (How) - 공용 컴포넌트로 아주 잘 작동하도록. 🤔
+  </Step>
+  <Step>
+  누가 (Who) - 누군가(sykim) 작성한다. 😮
+  </Step>
+  <Step>
+  언제까지 (When) - 최대한 빠르게.. 한다. 😑
+  </Step>
+</Steps>
+
+---
+
+여러분 이렇게 공용 컴포넌트를 만들었습니다!?
+
+```tsx
+import classNames from 'classnames';
+
+export default function Button({
+  text,
+  icon = null,
+  type = 'primary',
+  size = 'middle',
+  outline = false,
+  dashed = false,
+  disabled = false,
+  customCSS = '',
+  onClick,
+}) {
+  return (
+    <button onClick={onClick}>
+      {버튼을 만들어내는 아름다운 로직...}
+    </button>
+  );
+}
+
+```
+
+---
+
+이제부터 버튼은 모두가 공용으로 사용합니다.
+
+```tsx
+  <Button text="버튼" type="primary" />
+```
+
+<Steps>
+  <Step>
+
+  </Step>
+  <Step>
+
+  ### 메인
+  <div className="flex justify-center" style={{marginBottom: '8px'}}>
+  <Button text="버튼" type="primary" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} onClick={() => alert('버튼을 클릭하셨군요?')}/>
+  <Button text="버튼" type="primary" outline={false} size="middle" customCSS="mr-2" icon={<Icon name="leafLine" size="middle"/>} />
+  <Button text="버튼" type="primary" outline={false} size="large" customCSS="mr-2" icon={<Icon name="leafLine" size="large"/>} />
+  <Button text="버튼" type="primary" outline={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="primary" outline={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="primary" outline={true} size="large" customCSS="mr-2" />
+  <Button text="버튼" type="primary" outline={true} dashed={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="primary" outline={true} dashed={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="primary" outline={true} dashed={true} size="large" customCSS="mr-2" />
+  </div>
+  </Step>
+
+  <Step>
+
+  ### 저장
+  <div className="flex justify-center" style={{marginBottom: '8px'}}>
+  <Button text="버튼" type="submit" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} />
+  <Button text="버튼" type="submit" outline={false} size="middle" customCSS="mr-2" icon={<Icon name="leafLine" size="middle"/>} />
+  <Button text="버튼" type="submit" outline={false} size="large" customCSS="mr-2" icon={<Icon name="leafLine" size="large"/>} />
+  <Button text="버튼" type="submit" outline={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="submit" outline={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="submit" outline={true} size="large" customCSS="mr-2" />
+  <Button text="버튼" type="submit" outline={true} dashed={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="submit" outline={true} dashed={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="submit" outline={true} dashed={true} size="large" customCSS="mr-2" />
+  </div>
+  </Step>
+
+  <Step>
+
+  ### 취소
+  <div className="flex justify-center" style={{marginBottom: '8px'}}>
+  <Button text="버튼" type="cancel" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} />
+  <Button text="버튼" type="cancel" outline={false} size="middle" customCSS="mr-2" icon={<Icon name="leafLine" size="middle"/>} />
+  <Button text="버튼" type="cancel" outline={false} size="large" customCSS="mr-2" icon={<Icon name="leafLine" size="large"/>} />
+  <Button text="버튼" type="cancel" outline={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="cancel" outline={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="cancel" outline={true} size="large" customCSS="mr-2" />
+  <Button text="버튼" type="cancel" outline={true} dashed={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="cancel" outline={true} dashed={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="cancel" outline={true} dashed={true} size="large" customCSS="mr-2" />
+  </div>
+  </Step>
+
+  <Step>
+
+  ### 삭제
+  <div className="flex justify-center" style={{marginBottom: '8px'}}>
+  <Button text="버튼" type="delete" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} />
+  <Button text="버튼" type="delete" outline={false} size="middle" customCSS="mr-2" icon={<Icon name="leafLine" size="middle"/>} />
+  <Button text="버튼" type="delete" outline={false} size="large" customCSS="mr-2" icon={<Icon name="leafLine" size="large"/>} />
+  <Button text="버튼" type="delete" outline={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="delete" outline={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="delete" outline={true} size="large" customCSS="mr-2" />
+  <Button text="버튼" type="delete" outline={true} dashed={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="delete" outline={true} dashed={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="delete" outline={true} dashed={true} size="large" customCSS="mr-2" />
+  </div>
+  </Step>
+
+  <Step>
+
+  ### 창조
+  <div  className="flex justify-center">
+  <Button text="버튼" type="new" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} />
+  <Button text="버튼" type="new" outline={false} size="middle" customCSS="mr-2" icon={<Icon name="leafLine" size="middle"/>} />
+  <Button text="버튼" type="new" outline={false} size="large" customCSS="mr-2" icon={<Icon name="leafLine" size="large"/>} />
+  <Button text="버튼" type="new" outline={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="new" outline={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="new" outline={true} size="large" customCSS="mr-2" />
+  <Button text="버튼" type="new" outline={true} dashed={true} size="small" customCSS="mr-2" />
+  <Button text="버튼" type="new" outline={true} dashed={true} size="middle" customCSS="mr-2" />
+  <Button text="버튼" type="new" outline={true} dashed={true} size="large" customCSS="mr-2" />
+  </div>
+  </Step>
+</Steps>
+
+---
+<Cover>
+
+  # 회의록은 TipTap Editor를 사용합니다.
+  
+  <IntraEditor />
+
+</Cover>
+
+---
 > Inscrutable icons litter the face of the devices even though the research
 > community has long demonstrated that people cannot remember the meaning of
 > more than a small number of icons […] Who can remember what each icon
 > means? Not me.
 >
 > <cite>Don Norman</cite>
-
----
-
-# 🤫
-
----
-
-<Steps>
-  <Step>Something</Step>
-  <Step>happens</Step>
-  <Step>one</Step>
-  <Step>by</Step>
-  <Step>one</Step>
-</Steps>
-
----
-
-## Slides are written in MDX!
-
-And code is highlighted using `react-syntax-highlighter`.
-
-```ts
-const variable: string = someFunction();
-```
 
 </SlidePage>
