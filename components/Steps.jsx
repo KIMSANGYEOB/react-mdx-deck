@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Steps = ({ children, className, styles }) => {
+export const Steps = ({ children, className }) => {
   const renderChildren = () => {
     return React.Children.map(children, (element, index) => {
       return (
@@ -10,7 +10,11 @@ export const Steps = ({ children, className, styles }) => {
       );
     });
   };
-  return <div className={className} styles={{styles}}>{renderChildren()}</div>;
+
+  return <div 
+    className={className}>
+      {renderChildren()}
+    </div>;
 };
 
 export default Steps;

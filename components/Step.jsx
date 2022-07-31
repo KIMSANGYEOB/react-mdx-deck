@@ -19,7 +19,6 @@ export const Step = ({ children, order, duration = 0.5 }) => {
 
   const stepIndex = steps.findIndex((step) => step === order);
   const isVisible = stepIndex >= 0 && stepIndex <= currentStep;
-  console.log("is step visible", isVisible);
   const opacity = isVisible ? 1 : 0;
   const translateY = isVisible ? 0 : TRANSLATE_Y_DISTANCE;
   return (

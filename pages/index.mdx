@@ -1,8 +1,18 @@
-<SlidePage next="page-2">
+<SlidePage>
 
 # Wooritech Intra Project
 
 ## Middle Section
+
+---
+
+<Cover>
+
+# 우리테크 인트라 어떻게 진행되고 있나요?
+
+# 🤔
+
+</Cover>
 
 ---
 
@@ -69,38 +79,261 @@
 
 ---
 
+# 참여자
+
+김상엽, 조종학, 이태종, 박병규, 유예진, 나승철, 이시황
+
+---
+
+  <div className="w-full pb-8">
+    <h2>@onlydel 😎 기술 스택 추천</h2>
+  </div>
+
+<Steps className="flex justify-around">
+  <Step>
+  </Step>
+  <Step>
+    <div className="flex-col">
+      <h2> Language </h2>
+      Javascript, Typescript
+    </div>
+  </Step>
+  <Step>
+    <div className="flex-col">
+      <h2> FrontEnd </h2>
+      React, NextJS
+    </div>
+  </Step>
+  <Step>
+    <div className="flex-col">
+      <h2> BackEnd </h2>
+      NextJS, Prisma
+    </div>
+  </Step>
+  <Step>
+    <div className="flex-col">
+      <h2> Database </h2>
+      MongoDB
+    </div>
+  </Step>
+  <Step>
+    <div className="flex-col">
+      <h2> Auth </h2>
+      RealAuth
+    </div>
+  </Step>
+  <Step>
+  </Step>
+</Steps>
+
+---
+
+<Steps>
+  <Step order={0}>
+
+  # 전체 팀원의 기술 스택 및 프로젝트 경험?
+
+  </Step>
+  <Step order={1}>
+  협업 프로젝트 경험 없음
+  </Step>
+  <Step order={2}>
+  Prisma 경험 없음
+  </Step>
+  <Step order={3}>
+  React는 이전에 Teck-Talk에서 진행한 경험 한번
+  </Step>
+  <Step order={4}>
+    NextJS (Server Side Rendering) FrameWork 처음
+  </Step>
+  <Step order={5}>
+    MongoDB 처음
+  </Step>
+</Steps>
+
+---
+
+<Steps>
+  <Step order={0}>
+
+# 러닝 커브가 좀 높은데 어떻게 효율적으로 할까? 😵
+
+  </Step>
+  <Step order={1}>
+
+## 일단 모두 다같이 해결해야 할 비지니스를 정의하자
+
+  </Step>
+  <Step order={2}>
+
+## 초반 3주동안은 비지니스를 정의하고 관련 기술스택 경험을 쌓도록 하자
+
+  </Step>  
+  <Step order={3}>
+
+## 팀끼리 각 비지니스에 집중해서 개발할 수 있는 환경을 제공해보자
+  </Step>
+</Steps>
+
+---
+
 <Cover>
 
-# 우리테크 인트라 어떻게 진행되고 있나요?
+# Team
 
-# 🤔
+<Steps className="flex justify-center gap-8">
+  <Step order={1}>
+  </Step>
+  <Step order={2}>
 
+# 조상 팀
+
+조원홍, 김상엽
+
+  </Step>
+  <Step order={3}>
+
+# ParkU 팀
+
+박병규, 유예진
+
+  </Step>
+  <Step order={4}>
+
+# 조나Strong 팀
+
+조종학, 나승철
+
+  </Step>
+  <Step order={5}>
+
+# TJ 황 팀
+
+이태종, 이시황
+
+  </Step>
+</Steps>
 </Cover>
 
 ---
 
-@onlydel 기술 스택 추천
+<Steps>
+  <Step order={0}>
 
+# DDD(Domain Driven Design)를 통한 비지니스 정의
 
-
-<Steps className="flex" styles="">
-  
-  <Step>
-    FrontEnd  
-    React
   </Step>
+  <Step order={1}>
 
-  <Step>
-    Backend  
-    React
+## 우리가 설계 및 개발해야 할 도메인과 비지니스에 대한 정의
+
   </Step>
+  <Step order={2}>
 
-  <Step>
-    Backend  
-    React
+## 비즈니스 Domain은 유사한 업무의 집합으로 나눈다
+
   </Step>
 </Steps>
 
+---
+
+# 이벤트 스토밍
+
+<div className="flex justify-center">
+  <img src="/image/group.png" />
+</div>
+
+---
+
+# 이벤트 스토밍
+
+<div className="flex justify-center">
+  <img src="/image/event-storming.png" />
+</div>
+
+---
+
+# 조상팀(조원홍 & 김상엽)
+
+<div className="flex justify-center">
+  <img src="/image/user-domain.png" />
+</div>
+
+---
+
+# 조상팀(조원홍 & 김상엽)
+
+<div className="flex justify-center">
+  <img src="/image/notify-domain.png" />
+</div>
+
+---
+
+# ParkU(박병규 & 유예진)
+
+<div className="flex justify-center">
+  <img src="/image/todo-domain.png" />
+</div>
+
+---
+
+# 조나 Strong(조종학 & 나승철)
+
+<div className="flex justify-center">
+  <img src="/image/meeting-domain.png" />
+</div>
+
+---
+
+# TJ 황(이태종 & 이시황)
+
+<div className="flex justify-center">
+  <img src="/image/vacations-domain.png" />
+</div>
+
+---
+
+# Boris Diagram (도메인과의 관계)
+
+<div className="flex justify-center">
+  <img src="/image/boris-diagram.png" style={{height: '800px'}}/>
+</div>
+
+---
+
+# [snap-e](https://miro.com/app/board/uXjVOxFBMhY=/) (도메인 상세 스펙 정의)
+
+<div className="flex justify-center">
+  <img src="/image/snap-e.png" style={{height: '800px'}}/>
+</div>
+
+---
+
+# 디자인 (tailwindCSS & Figma)
+
+<div className="flex justify-center">
+  <img src="/image/main.png" style={{height: '800px'}}/>
+</div>
+
+---
+
+## 팀끼리 각 비지니스에 집중해서 개발할 수 있는 환경을 제공해보자
+
+<Steps>
+  <Step></Step>
+  <Step>
+    사용자 인증에 대한 공통처리 ->
+    모든 페이지에서 사용자 정보를 제공받음
+  </Step>
+    <Step>API 보안 -> 통신하는 부분을 모듈화해서 보안 에러처리</Step>
+  <Step>
+    기본 라우팅 및 페이지 제공 -> 각 도메인에 맞는 페이지에 집중해서 개발
+  </Step>
+  <Step>공통적인 프로젝트 환경 설정</Step>
+  <Step>
+    공용 컴포넌트 제공
+  </Step>
+</Steps>
 
 ---
 
@@ -158,7 +391,7 @@ export default function Button({
   </Step>
   <Step>
 
-### 메인
+### 메인(Primary)
 
   <div className="flex justify-center" style={{marginBottom: '8px'}}>
   <Button text="버튼" type="primary" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} onClick={() => alert('버튼을 클릭하셨군요?')}/>
@@ -175,7 +408,7 @@ export default function Button({
 
   <Step>
 
-### 저장
+### 저장(Submit)
 
   <div className="flex justify-center" style={{marginBottom: '8px'}}>
   <Button text="버튼" type="submit" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} />
@@ -192,7 +425,7 @@ export default function Button({
 
   <Step>
 
-### 취소
+### 취소(Cancel)
 
   <div className="flex justify-center" style={{marginBottom: '8px'}}>
   <Button text="버튼" type="cancel" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} />
@@ -209,7 +442,7 @@ export default function Button({
 
   <Step>
 
-### 삭제
+### 삭제(Delete)
 
   <div className="flex justify-center" style={{marginBottom: '8px'}}>
   <Button text="버튼" type="delete" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} />
@@ -226,7 +459,7 @@ export default function Button({
 
   <Step>
 
-### 창조
+### 창조(New)
 
   <div  className="flex justify-center">
   <Button text="버튼" type="new" outline={false} size="small" customCSS="mr-2" icon={<Icon name="leafLine" size="small"/>} />
@@ -244,11 +477,77 @@ export default function Button({
 
 ---
 
+<Steps>
+  <Step>
+
+  ## 그 외.. 
+  </Step>
+  <Step>
+
+```tsx
+<Modal />
+```
+
+  </Step>
+  <Step>
+
+```tsx
+<Dropdown />
+```
+  </Step>
+  <Step>
+
+```tsx
+<SlideOver />
+```
+  </Step>
+  <Step>
+
+```tsx
+<Sidebar />
+```
+  </Step>
+  <Step>
+
+```tsx
+<List />
+```
+  </Step>
+  <Step>
+
+    ...
+  </Step>
+</Steps>
+
+---
+
+# 할 일 (박병규 & 유예진)
+
+<div className="flex justify-center">
+  <img src="/image/todo-page.png" className="h-[750px]" />
+</div>
+
+---
+
+# 휴가 팀 (이태종 & 이시황)
+
+<div className="flex justify-center">
+  <img src="/image/vacations-page.png" className="h-[750px]" />
+</div>
+
+---
+
+# 회의록 팀 (나승철)
+
+<div className="flex justify-center">
+  <img src="/image/meeting-page.png" className="h-[750px]" />
+</div>
+
+---
+
 <Cover>
 
 # 회의록은 TipTap Editor를 사용합니다.
-
-{" "}
 
 <IntraEditor />
 
@@ -256,11 +555,187 @@ export default function Button({
 
 ---
 
-> Inscrutable icons litter the face of the devices even though the research
-> community has long demonstrated that people cannot remember the meaning of
-> more than a small number of icons […] Who can remember what each icon
-> means? Not me.
->
-> <cite>Don Norman</cite>
+# 얼마나 진행됐나요?
+
+## 실제 업무 개발을 시작한 기간은 5주 정도가 지났습니다.
+
+---
+
+# 공지사항 팀 (김상엽)
+
+<br/>
+
+<Steps>
+<Step>
+
+## 현재 도메인에서 몇퍼센트정도 진행됐나요?
+
+### 70%
+</Step>
+<Step>
+
+<br/>
+
+## 향후 계획
+
+### 공지사항 수정 API 마무리단계
+
+### 남은 UI 조정
+</Step>
+</Steps>
+
+---
+
+# 할 일 팀 (박병규 & 유예진)
+
+<br/>
+
+<Steps>
+<Step>
+
+## 현재 도메인에서 몇퍼센트정도 진행됐나요?
+
+### 80%
+</Step>
+<Step>
+
+<br/>
+
+## 향후 계획
+
+### 모듈화, 너무 집중되있는 코드 분리
+
+### UI 수정
+
+### 할일기능쪽은 거의 마무리단계, 디테일 구현 요구사항들이 필요하다.
+</Step>
+</Steps>
+
+---
+
+# 휴가 팀 (이태종 & 이시황)
+
+<br/>
+
+<Steps>
+<Step>
+
+## 현재 도메인에서 몇퍼센트정도 진행됐나요?
+
+### 40%
+</Step>
+<Step>
+
+<br/>
+
+## 향후 계획
+
+### 8월 끝나기전에 도메인 완료 목표
+</Step>
+</Steps>
+
+---
+
+# 회의록 팀 (나승철)
+
+<br/>
+
+<Steps>
+<Step>
+
+## 현재 도메인에서 몇퍼센트정도 진행됐나요?
+
+### 60%
+</Step>
+<Step>
+
+<br/>
+
+## 향후계획
+
+### 깃헙 마일스톤 참고
+
+<div className="flex justify-center">
+<img src="/image/vacations-milestone.png" />
+</div>
+
+</Step>
+</Steps>
+
+---
+
+# 기술 중간평가
+
+---
+
+# React
+<br />
+
+리액트를 써본적이 없는데 전체적인 흐름을 어느정도 깨우침
+
+classNames를 통한 스타일제어 등이 편리함
+
+최적화를 정말 잘하려면 딥하게 공부하는 시간이 많이 필요함
+
+Component를 가져다 사용하는게 정말 용이함
+
+Hooks 사용법을 배우고 활용함
+
+---
+
+# TailwindCSS
+
+
+처음에 몇일 고생했지만 엄청 편함
+
+Bootstrap 같은 느낌을 받음
+
+생각보다 어렵지 않고 사용성이 좋음
+
+---
+
+# Prisma
+
+러닝커브가 있고 RDB였다면 어떤 SQL이 날아갈지 예측이 안됨
+
+JPA 강의를 배웠었는데 best pratice가 강제되어 잘 녹아있음
+
+기본적인 CRUD만 진행했지만 편리함
+
+---
+
+# NextJS
+
+디버깅 하는게 너무 불편함
+
+파일 구조로 핸들러를 매핑하는게 익숙하지가 않음
+
+어느정도 React, JS에 대한 이해도를 요구함
+
+---
+
+# 중간 총평
+
+- **김상엽**
+  - 인증처리 및 공통 모듈때문에 처리할 께 많았는데 구성하면서 좋은 경험을 했다.
+  - 공용 컴포넌트는 수많은 고민이 필요하다.
+
+- **ParkU 팀**
+  - 혼자하지 않고 이끌어주는 사람도 있고 팀워크도 있어서 좋았다.
+  - 도커는 윈도우에서 설치하기가 난이도가 있다.
+
+- **나승철**
+  - Next 빼고 다 마음에 들었습니다.
+  - https://funky-spear-fac.notion.site/Intra-dbbfc1fc159e4ae6ba7ecfb688b49391
+
+- **TJ 황 팀**
+  - 백문이 불여일견(강의를 그렇게 들어도 실제로 해보는게 와닿는다.)
+  - 기존의 업무 환경에서 새로운 기술스택을 경험해보니 보는 시야가 달라진다.
+
+---
+
+# 감사합니다.
+
+이 발표자료는 React와 MDX로 작성되었습니다. 🤩
 
 </SlidePage>

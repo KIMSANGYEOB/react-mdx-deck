@@ -2,8 +2,8 @@ const { teal, cyan, indigo, yellow, red } = require('tailwindcss/colors');
 
 module.exports = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx,html}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx,html}",
   ],
   theme: {
     fontSize: {
